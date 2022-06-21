@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/style.css" />
+    <meta name="author" content="ilyas kritet" />
+    <title>url-shorthener microservice</title>
+</head>
+
+<body>
+    <main class="conatiner">
+        <header class="haeder">
+            <h1>URL Shortener Microservice</h1>
+            <hr />
+        </header>
+        <section class="body">
+            <div>
+                <h2>Short URL Creation</h2>
+                <p>
+                    Example: <code>POST [project_url]/api/shorturl</code> -
+                    <code>https://www.google.com</code>
+                </p>
+                <form action="/api/shorturl" method="post">
+                    <fieldset>
+                        <legend>URL Shortener</legend>
+                        <label for="url">URL:</label>
+                        <input type="text" name="url" id="url" placeholder="http://www.freecodecamp.org/" required />
+                        <input type="submit" value="POST URL" />
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h2>Example Usage:</h2>
+                <p>
+                    <a href="/api/shorturl/3" target="_self" rel="noopener noreferrer">[this_project_url]/api/shorturl/3</a
+            >
+          </p>
+          <h3>Will Redirect to:</h3>
+          <p>
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="no-event"
+              >https://forum.freecodecamp.org/</a
+            >
+          </p>
+        </div>
+      </section>
+      <footer class="footer">
+        By
+        <a href="https://ilyaskritet.w3spaces.com/" target="_blank"
+          >Kritet ilyas</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
